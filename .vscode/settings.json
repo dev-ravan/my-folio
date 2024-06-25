@@ -1,0 +1,51 @@
+{
+  "cSpell.words": [
+    "Atre",
+    "datagrid",
+    "datetime",
+    "formfield",
+    "Gowsalyan",
+    "Malavika",
+    "Manisha",
+    "Maran",
+    "Ravan",
+    "roboto",
+    "Sachin",
+    "sidebarx",
+    "Sundar",
+    "syncfusion",
+    "Velmurugan"
+  ],
+
+  "dart.previewFlutterUiGuides": true,
+  "dart.flutterSdkPaths": [".fvm\flutter_sdk"],
+
+  // Remove .fvm files from search
+  "search.exclude": {
+    "**/.fvm": true
+  },
+  // Remove from file watching
+  "files.watcherExclude": {
+    "**/.fvm": true
+  },
+
+
+  "[dart]": {
+    "editor.tabSize": 2,
+    "editor.insertSpaces": true,
+    "editor.detectIndentation": false,
+    "editor.suggest.insertMode": "replace",
+    "editor.defaultFormatter": "Dart-Code.dart-code",
+    "editor.inlayHints.enabled": "offUnlessPressed",
+  
+    
+
+
+    
+  },
+
+  "editor.codeActionsOnSave": {
+    "source.fixAll": "explicit"
+  },
+  "cmake.sourceDirectory": "D:/Development/Front-End/atre_software_dev_v3/windows"
+}
