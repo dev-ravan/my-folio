@@ -2,7 +2,8 @@ import 'package:my_folio/Features/Nav%20Bar/Presentation/Components/floating_men
 import 'package:my_folio/Utils/exports.dart';
 
 class NavBar extends StatelessWidget {
-  const NavBar({super.key});
+  final Widget child;
+  const NavBar({super.key, required this.child});
 
   @override
   Widget build(BuildContext context) {
@@ -16,7 +17,7 @@ class NavBar extends StatelessWidget {
         children: [
           if (!isMobile) const SideMenuWidget(),
           Expanded(
-            child: Container(),
+            child: child,
           ),
         ],
       ),

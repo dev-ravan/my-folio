@@ -1,7 +1,4 @@
-import 'package:flutter_bloc/flutter_bloc.dart';
-import 'package:my_folio/Features/Nav%20Bar/Data/Models/menu_model.dart';
 import 'package:my_folio/Features/Nav%20Bar/Presentation/Components/menu_item.dart';
-import 'package:my_folio/Features/Nav%20Bar/Presentation/bloc/menu_bloc.dart';
 import 'package:my_folio/Utils/exports.dart';
 
 class SideMenuItems extends StatelessWidget {
@@ -9,6 +6,7 @@ class SideMenuItems extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    final bool isMobile = Responsive.isMobile(context);
     return BlocBuilder<MenuBloc, MenuState>(
       builder: (context, state) {
         List<MenuModel> menuItems = [];
@@ -33,6 +31,8 @@ class SideMenuItems extends StatelessWidget {
                     context
                         .read<MenuBloc>()
                         .add(MenuIndexChangeEvent(selectedIndex));
+                    goRouter.goNamed(menuItems[index].route);
+                    if (isMobile) goRouter.pop();
                   },
                   isSelected: isSelected,
                   menuItem: menuItems[index],
