@@ -24,12 +24,12 @@ class AppTextStyle {
     fontWeight: FontWeight.bold,
   );
   TextStyle headlineMedium = TextStyle(
-    color: Palettes.blackColor,
+    color: Palettes.violetColor,
     fontSize: 28,
     fontWeight: FontWeight.bold,
   );
   TextStyle headlineSmall = TextStyle(
-    color: Palettes.blackColor,
+    color: Palettes.violetColor,
     fontSize: 22,
     fontWeight: FontWeight.bold,
   );
@@ -40,7 +40,7 @@ class AppTextStyle {
   );
   TextStyle titleMedium = TextStyle(
     fontWeight: FontWeight.bold,
-    color: Palettes.blackColor,
+    color: Palettes.outlineColor,
     fontSize: 18,
   );
   TextStyle titleSmall = TextStyle(

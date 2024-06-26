@@ -17,7 +17,11 @@ class NavBar extends StatelessWidget {
         children: [
           if (!isMobile) const SideMenuWidget(),
           Expanded(
-            child: child,
+            child: Padding(
+              padding: EdgeInsets.only(
+                  left: !isMobile ? 30 : 0, top: 20, right: !isMobile ? 30 : 0),
+              child: child,
+            ),
           ),
         ],
       ),

@@ -12,7 +12,7 @@ ThemeData lightMode = ThemeData(
       secondary: Palettes.whiteColor,
       tertiary: Palettes.blackColor,
       outline: Palettes.outlineColor),
-  textTheme: GoogleFonts.dmSansTextTheme().copyWith(
+  textTheme: GoogleFonts.poppinsTextTheme().copyWith(
     displayLarge: _textStyle.displayLarge,
     displayMedium: _textStyle.displayMedium,
     displaySmall: _textStyle.displaySmall,
@@ -65,7 +65,7 @@ ThemeData darkMode = ThemeData(
     tertiary: Palettes.whiteColor,
     primaryContainer: Palettes.darkMenuColor,
   ),
-  textTheme: GoogleFonts.dmSansTextTheme().copyWith(
+  textTheme: GoogleFonts.poppinsTextTheme().copyWith(
     displayLarge: _textStyle.displayLarge.copyWith(color: Palettes.whiteColor),
     displayMedium:
         _textStyle.displayMedium.copyWith(color: Palettes.whiteColor),

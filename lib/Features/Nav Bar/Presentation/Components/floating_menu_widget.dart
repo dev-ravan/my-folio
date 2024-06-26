@@ -8,12 +8,12 @@ class FloatingMenuWidget extends StatelessWidget {
     final theme = Theme.of(context).colorScheme;
 
     return Builder(builder: (context) {
-      return InkWell(
-        onTap: () => Scaffold.of(context).openDrawer(),
-        child: Align(
-          alignment: Alignment.topLeft,
-          child: Padding(
-            padding: const EdgeInsets.all(20),
+      return Align(
+        alignment: Alignment.topLeft,
+        child: Padding(
+          padding: const EdgeInsets.all(20),
+          child: InkWell(
+            onTap: () => Scaffold.of(context).openDrawer(),
             child: Container(
               decoration: BoxDecoration(
                   color: theme.primary, borderRadius: BorderRadius.circular(5)),
