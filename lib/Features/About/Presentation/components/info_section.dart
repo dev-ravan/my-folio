@@ -1,5 +1,5 @@
-import 'package:flutter/material.dart';
 import 'package:my_folio/Features/About/Presentation/components/personal_info.dart';
+import 'package:my_folio/Features/About/Presentation/components/skills_info.dart';
 import 'package:my_folio/Utils/exports.dart';
 
 class InfoSection extends StatelessWidget {
@@ -7,14 +7,14 @@ class InfoSection extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    final bool isMobile = Responsive.isMobile(context);
     return Row(
+      crossAxisAlignment: CrossAxisAlignment.start,
       children: [
         const Expanded(
           child: PersonalInfo(),
         ),
-        SizedBox(
-          width: MediaQuery.of(context).size.width / 3.5,
-        )
+        if (!isMobile) const Expanded(child: SkillsInfo())
       ],
     );
   }

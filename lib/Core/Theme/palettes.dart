@@ -5,6 +5,7 @@ class Palettes {
   static Color primaryColor = const Color(0xffFA4233);
   static Color bgColor = const Color(0xffF3F4FD);
   static Color whiteColor = const Color(0xffFDFBFF);
+  static Color whiteTxtColor = const Color(0xffE9E4DF);
   static Color violetColor = const Color(0xff352E46);
   static Color blackColor = const Color(0xff333333);
   static Color greyColor = Colors.grey[500]!;

@@ -4,4 +4,5 @@ class MyIcons {
   static String services = "assets/icons/services.svg";
   static String projects = "assets/icons/projects.svg";
   static String contact = "assets/icons/contact.svg";
+  static String calendar = "assets/icons/calendar.svg";
 }

@@ -41,7 +41,7 @@ class AppTextStyle {
   TextStyle titleMedium = TextStyle(
     fontWeight: FontWeight.bold,
     color: Palettes.outlineColor,
-    fontSize: 18,
+    fontSize: 16,
   );
   TextStyle titleSmall = TextStyle(
     color: Palettes.blackColor,

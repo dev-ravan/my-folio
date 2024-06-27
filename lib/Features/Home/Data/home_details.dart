@@ -1,5 +1,5 @@
 class HomeDetails {
-  static String helloTxt = "Hello my name is ";
+  static String helloTxt = "Hello there! My name is ";
   static String myName = "Velmuruagn Ravindran";
   static List<String> roles = [
     "Flutter Developer",

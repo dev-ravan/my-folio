@@ -11,7 +11,7 @@ ThemeData lightMode = ThemeData(
       primary: Palettes.primaryColor,
       secondary: Palettes.whiteColor,
       tertiary: Palettes.blackColor,
-      outline: Palettes.outlineColor),
+      outline: Palettes.greyColor),
   textTheme: GoogleFonts.poppinsTextTheme().copyWith(
     displayLarge: _textStyle.displayLarge,
     displayMedium: _textStyle.displayMedium,
@@ -78,7 +78,7 @@ ThemeData darkMode = ThemeData(
         _textStyle.headlineSmall.copyWith(color: Palettes.whiteColor),
     titleLarge: _textStyle.titleLarge.copyWith(color: Palettes.whiteColor),
     titleSmall: _textStyle.titleSmall.copyWith(color: Palettes.whiteColor),
-    titleMedium: _textStyle.titleMedium.copyWith(color: Palettes.whiteColor),
+    titleMedium: _textStyle.titleMedium.copyWith(color: Palettes.whiteTxtColor),
     labelLarge: _textStyle.labelLarge.copyWith(color: Palettes.whiteColor),
     labelMedium: _textStyle.labelMedium.copyWith(color: Palettes.whiteColor),
     labelSmall: _textStyle.labelSmall.copyWith(color: Palettes.whiteColor),

@@ -26,3 +26,72 @@ class AboutDetails {
     SkillsMod(skill: "Bit Bucket", percentage: "40"),
   ];
 }
+
+enum EducationDetailsEnum {
+  college(
+      date: "2019 - 2022",
+      name: "Bachelor of Computer Application",
+      educationCenter: "MIET Arts & Science College",
+      percentage: "87%",
+      address: "Pudukkottai Main Road",
+      pincode: "Trichy - 620 007"),
+  higherSecondaryScl(
+      date: "2018 - 2019",
+      name: "Higher Secondary Education",
+      educationCenter: "Govt- Higher Secondary School",
+      percentage: "66%",
+      address: "Thagattur Subramanyan Kadu",
+      pincode: "Nagapattinam - 614 714"),
+  higherScl(
+      date: "2016 - 2017",
+      name: "Higher Education",
+      educationCenter: "Govt- High School",
+      percentage: "89%",
+      address: "Kurumbal Road Manali",
+      pincode: "Thiruvarur - 610 203");
+
+  final String date;
+  final String name;
+  final String educationCenter;
+  final String percentage;
+  final String address;
+  final String pincode;
+  const EducationDetailsEnum({
+    required this.date,
+    required this.name,
+    required this.educationCenter,
+    required this.percentage,
+    required this.address,
+    required this.pincode,
+  });
+}
+
+enum ExperienceDetailsEnum {
+  secondCompany(
+      date: "Jun 2023 - present",
+      role: "Flutter Developer",
+      company: "Atre Health Tech Pvt Ltd",
+      address: "PSG Foundry, Neelambur",
+      pincode: "Coimbatore - 641 062"),
+  firstCompany(
+      date: "Aug 2022 - May 2023",
+      role: "Software Developer",
+      company: "Meark Enterprise Pvt Ltd",
+      address: "BR Puram Industrial Estate, Peelamedu",
+      pincode: "Coimbatore - 641 004"),
+  ;
+
+  final String date;
+  final String role;
+  final String company;
+
+  final String address;
+  final String pincode;
+  const ExperienceDetailsEnum({
+    required this.date,
+    required this.role,
+    required this.company,
+    required this.address,
+    required this.pincode,
+  });
+}

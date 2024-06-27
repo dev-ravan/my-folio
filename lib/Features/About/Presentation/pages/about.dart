@@ -1,6 +1,8 @@
+import 'package:my_folio/Features/About/Presentation/components/education_and_experience_info.dart';
 import 'package:my_folio/Features/About/Presentation/components/info_section.dart';
 import 'package:my_folio/Features/About/Presentation/components/title_widget.dart';
 import 'package:my_folio/Features/About/data/about_details.dart';
+import 'package:my_folio/Features/Home/Presentation/components/common_button.dart';
 import 'package:my_folio/Utils/exports.dart';
 
 class AboutPage extends StatelessWidget {
@@ -40,8 +42,25 @@ class AboutPage extends StatelessWidget {
             style:
                 textTheme.titleMedium!.copyWith(fontWeight: FontWeight.normal),
           ),
+          gap24,
+          Row(
+            children: [
+              CommonButton(
+                title: "Download CV",
+                onTap: () {},
+              ),
+              gap12,
+              CommonButton(
+                title: "Hire Me",
+                onTap: () {},
+              )
+            ],
+          ),
           gap48,
-          const InfoSection()
+          const InfoSection(),
+          gap32,
+          const EducationAndExperienceInfo(),
+          gap32,
         ],
       ),
     ));

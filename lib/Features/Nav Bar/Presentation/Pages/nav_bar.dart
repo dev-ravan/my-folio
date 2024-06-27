@@ -19,7 +19,9 @@ class NavBar extends StatelessWidget {
           Expanded(
             child: Padding(
               padding: EdgeInsets.only(
-                  left: !isMobile ? 30 : 0, top: 20, right: !isMobile ? 30 : 0),
+                  left: !isMobile ? 30 : 20,
+                  top: !isMobile ? 20 : 40,
+                  right: !isMobile ? 30 : 20),
               child: child,
             ),
           ),
