@@ -11,7 +11,6 @@ class ServiceWidget extends StatelessWidget {
   Widget build(BuildContext context) {
     final theme = Theme.of(context).colorScheme;
     final textTheme = Theme.of(context).textTheme;
-    final size = MediaQuery.of(context).size;
 
     return Container(
       padding: const EdgeInsets.all(20),

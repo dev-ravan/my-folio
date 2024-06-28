@@ -1,6 +1,6 @@
 import 'package:my_folio/Features/About/Presentation/components/title_widget.dart';
 import 'package:my_folio/Features/Services/data/services_details.dart';
-import 'package:my_folio/Features/Services/presentation/componentt/service_widget.dart';
+import 'package:my_folio/Features/Services/presentation/component/service_widget.dart';
 import 'package:my_folio/Utils/exports.dart';
 
 class ServicesPage extends StatelessWidget {
