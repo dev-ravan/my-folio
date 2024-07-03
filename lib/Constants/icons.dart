@@ -13,4 +13,7 @@ class MyIcons {
   static String uiDesign = "assets/icons/ui-design.svg";
   static String webApp = "assets/icons/web-app.svg";
   static String website = "assets/icons/website.svg";
+
+  // Project Icons
+  static String gitHub = "assets/icons/github.png";
 }

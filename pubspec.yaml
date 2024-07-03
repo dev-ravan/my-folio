@@ -17,6 +17,7 @@ dependencies:
   go_router: ^14.2.0
   google_fonts: ^6.2.1
   percent_indicator: ^4.2.3
+  url_launcher: ^6.3.0
 
 dev_dependencies:
   flutter_test:

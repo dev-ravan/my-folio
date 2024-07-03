@@ -1,3 +1,4 @@
+import 'package:flutter/material.dart';
 import 'package:my_folio/Features/Home/Presentation/components/basic_intro.dart';
 import 'package:my_folio/Features/Home/Presentation/components/img_intro_section.dart';
 import 'package:my_folio/Utils/exports.dart';
@@ -13,8 +14,11 @@ class HomePage extends StatelessWidget {
         child: Row(
           crossAxisAlignment: CrossAxisAlignment.center,
           children: [
-            const Expanded(flex: 2, child: BasicIntroSection()),
-            if (!isMobile) const Expanded(child: ImgIntroSection())
+            const Expanded(child: BasicIntroSection()),
+            if (!isMobile)
+              SizedBox(
+                  width: MediaQuery.of(context).size.width / 3,
+                  child: const ImgIntroSection())
           ],
         ),
       ),

@@ -22,6 +22,7 @@ class ServicesPage extends StatelessWidget {
             shrinkWrap: true,
             itemCount: ServiceDetails.services.length,
             gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
+                childAspectRatio: 0.9,
                 mainAxisSpacing: 20,
                 crossAxisSpacing: 20,
                 crossAxisCount: isTablet
