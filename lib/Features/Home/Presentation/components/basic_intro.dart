@@ -48,6 +48,7 @@ class BasicIntroSection extends StatelessWidget {
             onTap: () {},
             title: "More about Me",
           ),
+          if (isMobile) gap24,
         ],
       ),
     );
