@@ -34,7 +34,7 @@ ThemeData lightMode = ThemeData(
     isDense: true,
     focusedErrorBorder: OutlineInputBorder(
       borderRadius: BorderRadius.circular(5),
-      borderSide: BorderSide(color: Palettes.darkBgColor, width: 2),
+      borderSide: BorderSide(color: Palettes.redColor, width: 2),
     ),
     enabledBorder: OutlineInputBorder(
       borderRadius: BorderRadius.circular(5),
@@ -46,7 +46,7 @@ ThemeData lightMode = ThemeData(
     ),
     errorBorder: OutlineInputBorder(
       borderRadius: BorderRadius.circular(5),
-      borderSide: BorderSide(color: Palettes.primaryColor, width: 2),
+      borderSide: BorderSide(color: Palettes.redColor, width: 2),
     ),
     border: OutlineInputBorder(
       borderRadius: BorderRadius.circular(5),
@@ -85,5 +85,28 @@ ThemeData darkMode = ThemeData(
     bodyLarge: _textStyle.bodyLarge.copyWith(color: Palettes.whiteColor),
     bodyMedium: _textStyle.bodyMedium.copyWith(color: Palettes.whiteColor),
     bodySmall: _textStyle.bodySmall.copyWith(color: Palettes.whiteColor),
+  ),
+  inputDecorationTheme: InputDecorationTheme(
+    contentPadding: const EdgeInsets.symmetric(horizontal: 12, vertical: 14),
+    isDense: true,
+    focusedErrorBorder: OutlineInputBorder(
+      borderRadius: BorderRadius.circular(5),
+      borderSide: BorderSide(color: Palettes.redColor, width: 2),
+    ),
+    enabledBorder: OutlineInputBorder(
+      borderRadius: BorderRadius.circular(5),
+      borderSide: BorderSide(color: Palettes.greyColor),
+    ),
+    focusedBorder: OutlineInputBorder(
+      borderRadius: BorderRadius.circular(5),
+      borderSide: BorderSide(color: Palettes.primaryColor, width: 2),
+    ),
+    errorBorder: OutlineInputBorder(
+      borderRadius: BorderRadius.circular(5),
+      borderSide: BorderSide(color: Palettes.redColor, width: 2),
+    ),
+    border: OutlineInputBorder(
+      borderRadius: BorderRadius.circular(5),
+    ),
   ),
 );

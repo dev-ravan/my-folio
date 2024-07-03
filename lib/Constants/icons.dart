@@ -16,4 +16,9 @@ class MyIcons {
 
   // Project Icons
   static String gitHub = "assets/icons/github.png";
+
+  // Contact Icons
+  static String call = "assets/icons/call.svg";
+  static String location = "assets/icons/location.svg";
+  static String mail = "assets/icons/mail.svg";
 }
