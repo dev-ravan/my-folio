@@ -2,7 +2,6 @@ import 'package:my_folio/Features/Contact/data/contact_details.dart';
 import 'package:my_folio/Features/Contact/presentation/components/msg_field.dart';
 import 'package:my_folio/Features/Home/Presentation/components/common_button.dart';
 import 'package:my_folio/Utils/exports.dart';
-import 'package:url_launcher/url_launcher.dart';
 
 class MessageMe extends StatelessWidget {
   const MessageMe({super.key});
