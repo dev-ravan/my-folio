@@ -1,3 +1,4 @@
+import 'package:my_folio/Constants/images.dart';
 import 'package:my_folio/Utils/exports.dart';
 
 class ImgIntroSection extends StatelessWidget {
@@ -50,6 +51,10 @@ class ImgIntroSection extends StatelessWidget {
           Container(
             margin: isMobile ? p16 : p32,
             color: Colors.red[100],
+            child: Image.asset(
+              MyImages.profile,
+              fit: BoxFit.cover,
+            ),
           )
         ],
       ),

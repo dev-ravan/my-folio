@@ -4,14 +4,30 @@ import 'package:my_folio/Features/About/Presentation/components/title_widget.dar
 import 'package:my_folio/Features/About/data/about_details.dart';
 import 'package:my_folio/Features/Home/Presentation/components/common_button.dart';
 import 'package:my_folio/Utils/exports.dart';
+import 'package:url_launcher/url_launcher.dart';
 
 class AboutPage extends StatelessWidget {
   const AboutPage({super.key});
 
   @override
   Widget build(BuildContext context) {
+    // Theme
     final textTheme = Theme.of(context).textTheme;
     final theme = Theme.of(context).colorScheme;
+
+    // Launch mail for clicking hire me
+    void launchHireMeEmail() async {
+      final Uri url = Uri(
+        scheme: 'mailto',
+        path: AboutDetails.myMailId,
+      );
+      try {
+        await launchUrl(url);
+      } catch (e) {
+        throw Exception('Could not launch $url');
+      }
+    }
+
     return Scaffold(
         body: SingleChildScrollView(
       child: Column(
@@ -52,7 +68,7 @@ class AboutPage extends StatelessWidget {
               gap12,
               CommonButton(
                 title: "Hire Me",
-                onTap: () {},
+                onTap: () => launchHireMeEmail(),
               )
             ],
           ),

@@ -20,7 +20,7 @@ class MainApp extends StatelessWidget {
         child: MaterialApp.router(
           debugShowCheckedModeBanner: false,
           theme: lightMode,
-          // darkTheme: darkMode,
+          darkTheme: darkMode,
           routerConfig: goRouter,
         ),
       ),

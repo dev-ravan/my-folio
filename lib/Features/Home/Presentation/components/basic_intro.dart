@@ -34,7 +34,7 @@ class BasicIntroSection extends StatelessWidget {
           ),
           gap24,
           if (isMobile) gap12,
-          if (isMobile) const ImgIntroSection(),
+          if (isMobile) const Center(child: ImgIntroSection()),
           if (isMobile) gap12,
           const RoleWidget(),
           gap24,

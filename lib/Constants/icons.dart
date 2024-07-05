@@ -6,6 +6,11 @@ class MyIcons {
   static String contact = "assets/icons/contact.svg";
   static String calendar = "assets/icons/calendar.svg";
 
+  // Footer
+  static String linkedIn = "assets/icons/linkedin.svg";
+  static String github = "assets/icons/github.svg";
+  static String twitter = "assets/icons/twitter.svg";
+
   // Services Icons
   static String mobileApp = "assets/icons/mobile-app.svg";
   static String crossApp = "assets/icons/cross-app.svg";
