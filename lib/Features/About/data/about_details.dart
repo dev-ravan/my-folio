@@ -1,6 +1,7 @@
 import 'package:my_folio/Features/About/data/Model/skill_mod.dart';
 
 class AboutDetails {
+  static String myMailId = "velmurugan1211r@gmail.com";
   static String title = "About Me";
   static String myName = "I'm Velmurugan and ";
   static String myRole = "Flutter Developer";

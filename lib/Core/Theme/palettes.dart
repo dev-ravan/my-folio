@@ -11,6 +11,7 @@ class Palettes {
   static Color greyColor = Colors.grey[500]!;
   static Color outlineColor = const Color(0xff525252);
   static Color transparentColor = Colors.transparent;
+  static Color redColor = Colors.redAccent;
 
   // Dark Mode Palette
   static Color darkMenuColor = const Color(0xff222222);

@@ -15,10 +15,7 @@ class HomePage extends StatelessWidget {
           crossAxisAlignment: CrossAxisAlignment.center,
           children: [
             const Expanded(child: BasicIntroSection()),
-            if (!isMobile)
-              SizedBox(
-                  width: MediaQuery.of(context).size.width / 3,
-                  child: const ImgIntroSection())
+            if (!isMobile) const ImgIntroSection()
           ],
         ),
       ),

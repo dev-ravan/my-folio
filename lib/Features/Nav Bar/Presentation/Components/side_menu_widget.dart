@@ -1,3 +1,4 @@
+import 'package:my_folio/Features/Nav%20Bar/Presentation/Components/footer.dart';
 import 'package:my_folio/Utils/exports.dart';
 
 class SideMenuWidget extends StatelessWidget {
@@ -16,10 +17,9 @@ class SideMenuWidget extends StatelessWidget {
                   width: 1.5))),
       padding: !isTablet ? const EdgeInsets.symmetric(horizontal: 40) : null,
       width: menuWidth,
-      child: Column(
-        crossAxisAlignment:
-            isTablet ? CrossAxisAlignment.center : CrossAxisAlignment.start,
-        children: const [Header(), gap48, SideMenuItems()],
+      child: const Column(
+        crossAxisAlignment: CrossAxisAlignment.center,
+        children: [Header(), gap48, SideMenuItems(), Footer(), gap12],
       ),
     );
   }
