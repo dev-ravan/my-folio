@@ -54,6 +54,7 @@ class EducationAndExperienceInfo extends StatelessWidget {
             color: theme.secondary,
           ),
           child: ListView.builder(
+            physics: const NeverScrollableScrollPhysics(),
             shrinkWrap: true,
             itemCount: ExperienceDetailsEnum.values.length,
             itemBuilder: (context, index) {
@@ -92,6 +93,7 @@ class EducationAndExperienceInfo extends StatelessWidget {
             color: theme.secondary,
           ),
           child: ListView.builder(
+            physics: const NeverScrollableScrollPhysics(),
             shrinkWrap: true,
             itemCount: EducationDetailsEnum.values.length,
             itemBuilder: (context, index) {
