@@ -27,6 +27,7 @@ class _ProjectHoverBoxWidgetState extends State<ProjectHoverBoxWidget> {
   @override
   Widget build(BuildContext context) {
     final theme = Theme.of(context).colorScheme;
+    final bool isMobile = Responsive.isMobile(context);
 
     return MouseRegion(
       onEnter: (event) {
@@ -87,7 +88,27 @@ class _ProjectHoverBoxWidgetState extends State<ProjectHoverBoxWidget> {
                     ],
                   ),
                 )
-              : null,
+              : isMobile
+                  ? SizedBox(
+                      width: double.maxFinite,
+                      child: Column(
+                        crossAxisAlignment: CrossAxisAlignment.start,
+                        mainAxisAlignment: MainAxisAlignment.start,
+                        children: [
+                          IconButton(
+                              onPressed: () => setState(() {
+                                    launchInBrowser(widget.details.gitLink);
+                                  }),
+                              icon: Image.asset(
+                                MyIcons.gitHub,
+                                color: Palettes.blackColor,
+                                height: 32,
+                                width: 32,
+                              ))
+                        ],
+                      ),
+                    )
+                  : null,
         ),
       ),
     );

@@ -1,6 +1,6 @@
 import 'package:my_folio/Features/About/Presentation/components/title_widget.dart';
 import 'package:my_folio/Features/Services/data/services_details.dart';
-import 'package:my_folio/Features/Services/presentation/component/service_widget.dart';
+import 'package:my_folio/Features/Services/presentation/components/service_widget.dart';
 import 'package:my_folio/Utils/exports.dart';
 
 class ServicesPage extends StatelessWidget {
@@ -20,6 +20,7 @@ class ServicesPage extends StatelessWidget {
           gap48,
           GridView.builder(
             shrinkWrap: true,
+            physics: const NeverScrollableScrollPhysics(),
             itemCount: ServiceDetails.services.length,
             gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
                 childAspectRatio: 0.9,
