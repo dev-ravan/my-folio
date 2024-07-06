@@ -48,12 +48,14 @@ class ImgIntroSection extends StatelessWidget {
               color: theme.primary,
             ),
           ),
-          Container(
-            margin: isMobile ? p16 : p32,
-            color: Colors.red[100],
-            child: Image.asset(
-              MyImages.profile,
-              fit: BoxFit.cover,
+          Center(
+            child: Container(
+              margin: p32,
+              color: Colors.red[100],
+              child: Image.asset(
+                MyImages.profile,
+                fit: BoxFit.cover,
+              ),
             ),
           )
         ],

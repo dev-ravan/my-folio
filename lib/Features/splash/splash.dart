@@ -21,11 +21,8 @@ class _SplashPageState extends State<SplashPage> {
 
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
-      body: Center(
-          child: SizedBox(
-              width: MediaQuery.of(context).size.width / 5,
-              child: const Header())),
+    return const Scaffold(
+      body: Center(child: SizedBox(width: 200, child: Header())),
     );
   }
 }
