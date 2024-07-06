@@ -16,7 +16,9 @@ class FloatingMenuWidget extends StatelessWidget {
             onTap: () => Scaffold.of(context).openDrawer(),
             child: Container(
               decoration: BoxDecoration(
-                  color: theme.primary, borderRadius: BorderRadius.circular(5)),
+                color: theme.primary,
+                borderRadius: BorderRadius.circular(5),
+              ),
               height: 40,
               width: 40,
               child: Icon(
