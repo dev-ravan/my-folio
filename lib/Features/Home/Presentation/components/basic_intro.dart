@@ -1,3 +1,4 @@
+import 'package:my_folio/Core/Routers/route_names.dart';
 import 'package:my_folio/Features/Home/Data/home_details.dart';
 import 'package:my_folio/Features/Home/Presentation/components/common_button.dart';
 import 'package:my_folio/Features/Home/Presentation/components/img_intro_section.dart';
@@ -45,7 +46,7 @@ class BasicIntroSection extends StatelessWidget {
           ),
           gap48,
           CommonButton(
-            onTap: () {},
+            onTap: () => goRouter.pushNamed(MyRouteNames.about),
             title: "More about Me",
           ),
           if (isMobile) gap24,

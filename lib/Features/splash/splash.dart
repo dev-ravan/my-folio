@@ -1,3 +1,4 @@
+import 'package:flutter/widgets.dart';
 import 'package:my_folio/Core/Routers/route_names.dart';
 
 import '../../Utils/exports.dart';
@@ -22,14 +23,9 @@ class _SplashPageState extends State<SplashPage> {
   Widget build(BuildContext context) {
     return Scaffold(
       body: Center(
-        child: Text(
-          "My Folio",
-          style: Theme.of(context)
-              .textTheme
-              .displaySmall!
-              .copyWith(color: Theme.of(context).colorScheme.primary),
-        ),
-      ),
+          child: SizedBox(
+              width: MediaQuery.of(context).size.width / 5,
+              child: const Header())),
     );
   }
 }
