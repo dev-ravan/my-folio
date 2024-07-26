@@ -10,7 +10,7 @@ class ContactPage extends StatelessWidget {
   Widget build(BuildContext context) {
     final bool isMobile = Responsive.isMobile(context);
     return Scaffold(
-        body: SingleChildScrollView(
+        body: SingleChildScrollView( 
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
