@@ -1,4 +1,5 @@
 import 'package:my_folio/Features/Nav%20Bar/Presentation/Components/footer.dart';
+import 'package:my_folio/Features/Nav%20Bar/Presentation/Components/theme_switcher.dart';
 import 'package:my_folio/Utils/exports.dart';
 
 class SideMenuWidget extends StatelessWidget {
@@ -7,6 +8,7 @@ class SideMenuWidget extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     final isTablet = Responsive.isTablet(context);
+
     double menuWidth = isTablet ? 80 : 270;
     return Container(
       decoration: BoxDecoration(
@@ -19,7 +21,15 @@ class SideMenuWidget extends StatelessWidget {
       width: menuWidth,
       child: const Column(
         crossAxisAlignment: CrossAxisAlignment.center,
-        children: [Header(), gap48, SideMenuItems(), Footer(), gap12],
+        children: [
+          Header(),
+          gap48,
+          SideMenuItems(),
+          Footer(),
+          gap12,
+          ThemeSwitcher(),
+          gap12,
+        ],
       ),
     );
   }

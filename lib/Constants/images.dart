@@ -1,6 +1,6 @@
 class MyImages {
   // My Profile Image
-  static String profile = "assets/images/my_profile.jpg";
+  static String profile = "assets/images/profile-3.png";
   // Logo
   static String logo = "assets/images/logo.png";
   // Project Images

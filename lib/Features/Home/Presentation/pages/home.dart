@@ -1,4 +1,3 @@
-import 'package:flutter/material.dart';
 import 'package:my_folio/Features/Home/Presentation/components/basic_intro.dart';
 import 'package:my_folio/Features/Home/Presentation/components/img_intro_section.dart';
 import 'package:my_folio/Utils/exports.dart';

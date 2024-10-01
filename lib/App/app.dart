@@ -1,5 +1,7 @@
+import 'package:my_folio/Core/Theme/them_provider.dart';
 import 'package:my_folio/Features/Contact/presentation/bloc/contact_bloc.dart';
 import 'package:my_folio/Utils/exports.dart';
+import 'package:provider/provider.dart';
 import 'package:toastification/toastification.dart';
 
 class MainApp extends StatelessWidget {
@@ -17,11 +19,13 @@ class MainApp extends StatelessWidget {
         ),
       ],
       child: ToastificationWrapper(
-        child: MaterialApp.router(
-          debugShowCheckedModeBanner: false,
-          theme: lightMode,
-          darkTheme: darkMode,
-          routerConfig: goRouter,
+        child: ChangeNotifierProvider(
+          create: (context) => ThemeProvider(),
+          builder: (context, child) => MaterialApp.router(
+            debugShowCheckedModeBanner: false,
+            theme: Provider.of<ThemeProvider>(context).appTheme,
+            routerConfig: goRouter,
+          ),
         ),
       ),
     );
