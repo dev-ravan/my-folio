@@ -15,7 +15,7 @@ class ThemeSwitcher extends StatelessWidget {
       create: (context) => ThemeProvider(),
       child: ToggleSwitch(
         isVertical: isTablet,
-        minWidth: isTablet ? 50 : 90.0,
+        minWidth: isTablet ? 50.0 : 90.0,
         minHeight: 50,
         cornerRadius: 10.0,
         activeBgColors: [

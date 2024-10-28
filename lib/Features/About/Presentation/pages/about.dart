@@ -1,9 +1,14 @@
+// ignore_for_file: use_build_context_synchronously
+
+import 'package:my_folio/Constants/docs.dart';
 import 'package:my_folio/Features/About/Presentation/components/education_and_experience_info.dart';
 import 'package:my_folio/Features/About/Presentation/components/info_section.dart';
 import 'package:my_folio/Features/About/Presentation/components/title_widget.dart';
 import 'package:my_folio/Features/About/data/about_details.dart';
 import 'package:my_folio/Features/Home/Presentation/components/common_button.dart';
 import 'package:my_folio/Utils/exports.dart';
+import 'package:my_folio/Utils/pdf_services.dart';
+import 'package:my_folio/Utils/toasts.dart';
 import 'package:url_launcher/url_launcher.dart';
 
 class AboutPage extends StatelessWidget {
@@ -25,6 +30,20 @@ class AboutPage extends StatelessWidget {
         await launchUrl(url);
       } catch (e) {
         throw Exception('Could not launch $url');
+      }
+    }
+
+    // Download cv
+    Future<void> downloadCv() async {
+      try {
+        await PDFService.downloadFromAssets(
+          Docs.resume,
+          Docs.resumeName,
+        );
+      } catch (e) {
+        // You might want to show a snackbar or dialog here
+        warningToastMsg(
+            msg: "Can't download resume right now!", context: context);
       }
     }
 
@@ -63,7 +82,7 @@ class AboutPage extends StatelessWidget {
             children: [
               CommonButton(
                 title: "Download CV",
-                onTap: () {},
+                onTap: () => downloadCv(),
               ),
               gap12,
               CommonButton(
