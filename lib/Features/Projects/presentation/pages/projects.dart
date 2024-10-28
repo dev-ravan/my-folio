@@ -22,6 +22,7 @@ class ProjectsPage extends StatelessWidget {
           // Grid View
           GridView.builder(
             itemCount: ProjectDetails.projects.length,
+            physics: const NeverScrollableScrollPhysics(),
             shrinkWrap: true,
             gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
                 mainAxisSpacing: 20,

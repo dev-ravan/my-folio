@@ -25,6 +25,7 @@ class GetInTouch extends StatelessWidget {
         ),
         gap32,
         ListView.builder(
+            physics: const NeverScrollableScrollPhysics(),
             shrinkWrap: true,
             itemCount: ContactDetails.contactInfo.length,
             itemBuilder: (context, index) {

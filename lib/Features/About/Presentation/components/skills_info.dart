@@ -8,6 +8,7 @@ class SkillsInfo extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return ListView.builder(
+        physics: const NeverScrollableScrollPhysics(),
         shrinkWrap: true,
         itemCount: AboutDetails.techSkills.length,
         itemBuilder: (context, index) {

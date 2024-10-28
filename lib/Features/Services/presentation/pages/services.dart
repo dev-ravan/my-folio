@@ -19,6 +19,7 @@ class ServicesPage extends StatelessWidget {
           TitleWidget(title: ServiceDetails.title),
           gap48,
           GridView.builder(
+            physics: const NeverScrollableScrollPhysics(),
             shrinkWrap: true,
             itemCount: ServiceDetails.services.length,
             gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
