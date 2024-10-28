@@ -23,6 +23,7 @@ dependencies:
   provider: ^6.1.2
   toggle_switch: ^2.3.0
   font_awesome_flutter: ^10.7.0
+  firebase_core: ^3.6.0
   
 
 dev_dependencies:
